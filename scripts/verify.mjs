@@ -41,6 +41,7 @@ async function walkFiles(root) {
     const entries = await fs.readdir(current, { withFileTypes: true });
     entries.sort((a, b) => a.name.localeCompare(b.name));
     for (const entry of entries) {
+      if (!relative && entry.name === '.git') continue;
       const nextRelative = path.join(relative, entry.name);
       const absolute = path.join(current, entry.name);
       assert.ok(!entry.isSymbolicLink(), `symlink is not allowed: ${nextRelative}`);

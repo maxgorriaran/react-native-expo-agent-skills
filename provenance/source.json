@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "generatedAt": "deterministic-from-git-object",
   "sourceProject": "CoRoam mobile application engineering",
-  "sourceCommit": "116662d66824914a171d1c283552e3ca7cb77645",
+  "sourceCommit": "2111a5e7986685576c8573f48797c343eb52e2b0",
   "sourceRoot": ".agents/skills",
   "exportDirection": "one-way",
   "handMaintainedPublicMirror": false
