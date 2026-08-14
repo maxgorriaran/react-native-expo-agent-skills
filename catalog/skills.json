@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "name": "react-native-expo-agent-skills",
+  "version": "0.1.0",
+  "repository": "https://github.com/maxgorriaran/react-native-expo-agent-skills",
+  "sourceCommit": "116662d66824914a171d1c283552e3ca7cb77645",
+  "skills": [
+    {
+      "name": "async-effect-authority",
+      "summary": "Prevent stale, replaced, cancelled, or replayed async work from publishing effects.",
+      "tags": [
+        "async",
+        "react-native",
+        "state",
+        "reliability"
+      ],
+      "path": "skills/async-effect-authority",
+      "license": "MIT"
+    },
+    {
+      "name": "expo-platform-engineering",
+      "summary": "Reason safely across Expo SDK, app config, native runtime, background work, notifications, and updates.",
+      "tags": [
+        "expo",
+        "ios",
+        "android",
+        "native"
+      ],
+      "path": "skills/expo-platform-engineering",
+      "license": "MIT"
+    },
+    {
+      "name": "mobile-app-qa-proof",
+      "summary": "Select and report mobile evidence without confusing static checks with runtime or release proof.",
+      "tags": [
+        "qa",
+        "testing",
+        "evidence",
+        "release"
+      ],
+      "path": "skills/mobile-app-qa-proof",
+      "license": "MIT"
+    },
+    {
+      "name": "mobile-navigation-authority",
+      "summary": "Keep one owner for app navigation, geographic routes, camera intent, links, and recovery.",
+      "tags": [
+        "navigation",
+        "maps",
+        "react-navigation",
+        "reliability"
+      ],
+      "path": "skills/mobile-navigation-authority",
+      "license": "MIT"
+    },
+    {
+      "name": "mobile-session-location-safety",
+      "summary": "Protect session lifecycle ownership, GPS truth, background tracking, and recovery.",
+      "tags": [
+        "location",
+        "background",
+        "sessions",
+        "expo"
+      ],
+      "path": "skills/mobile-session-location-safety",
+      "license": "MIT"
+    },
+    {
+      "name": "react-native-engineering",
+      "summary": "Build bounded, accessible, evidence-led React Native components and hooks.",
+      "tags": [
+        "react-native",
+        "accessibility",
+        "performance",
+        "ui"
+      ],
+      "path": "skills/react-native-engineering",
+      "license": "MIT"
+    }
+  ]
+}

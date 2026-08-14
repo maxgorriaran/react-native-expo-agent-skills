@@ -1,0 +1,4 @@
+interface:
+  display_name: "Async Effect Authority"
+  short_description: "Prevent stale asynchronous side effects"
+  default_prompt: "Use $async-effect-authority to harden this async operation against stale effects."

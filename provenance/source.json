@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "generatedAt": "deterministic-from-git-object",
+  "sourceProject": "CoRoam mobile application engineering",
+  "sourceCommit": "116662d66824914a171d1c283552e3ca7cb77645",
+  "sourceRoot": ".agents/skills",
+  "exportDirection": "one-way",
+  "handMaintainedPublicMirror": false
+}

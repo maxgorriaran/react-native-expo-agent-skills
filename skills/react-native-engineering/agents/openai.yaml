@@ -1,0 +1,4 @@
+interface:
+  display_name: "React Native Engineering"
+  short_description: "Build bounded React Native mobile surfaces"
+  default_prompt: "Use $react-native-engineering to implement this bounded React Native change."

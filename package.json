@@ -1,0 +1,13 @@
+{
+  "name": "react-native-expo-agent-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent Skills for reliable React Native and Expo engineering",
+  "license": "MIT",
+  "scripts": {
+    "test": "node scripts/verify.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

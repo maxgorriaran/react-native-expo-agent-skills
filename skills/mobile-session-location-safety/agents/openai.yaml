@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mobile Session and Location Safety"
+  short_description: "Protect lifecycle ownership and location truth"
+  default_prompt: "Use $mobile-session-location-safety to harden this mobile session or location change."

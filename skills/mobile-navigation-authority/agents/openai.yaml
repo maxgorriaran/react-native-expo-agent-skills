@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mobile Navigation Authority"
+  short_description: "Control app and geographic transitions"
+  default_prompt: "Use $mobile-navigation-authority to preserve one owner for this mobile navigation transition."

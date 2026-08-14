@@ -1,0 +1,4 @@
+interface:
+  display_name: "Expo Platform Engineering"
+  short_description: "Engineer Expo and native platform seams"
+  default_prompt: "Use $expo-platform-engineering to assess this Expo platform change and its proof boundaries."
