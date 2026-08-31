@@ -8,6 +8,12 @@ license: MIT
 
 Choose the strongest practical evidence for the changed risk without claiming that one proof layer establishes another.
 
+## Standalone Use And Scope
+
+This skill does not require sibling skills. References to other skills below are optional: use them only if available and relevant. Otherwise follow the target repository's instructions, existing owners, and tests; ask when missing domain policy prevents a safe decision. Do not install a missing skill automatically.
+
+Match the user's request: review or planning does not authorize edits. Instructions here do not grant permission for unrelated installs, credential access, destructive actions, deployment, or publication.
+
 ## Establish The Verification Contract
 
 1. Run `git status --short --branch` and inspect the exact changed or planned paths.
@@ -32,6 +38,8 @@ Keep these results separate:
 Passing an earlier layer never proves a later one.
 
 ## Select Focused Checks
+
+Use the [risk-based proof examples](references/risk-based-proof-examples.md) to match checks and report wording to the changed boundary.
 
 - For docs, manifests, and skill metadata, use structural validators and exact-file inspection.
 - For typed client changes, use the repository's narrow type check and the affected deterministic tests.

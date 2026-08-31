@@ -8,6 +8,12 @@ license: MIT
 
 Keep one current session owner across lifecycle, location, background, and recovery paths. Fail closed on ambiguous ownership while degrading calmly when location or background capability is unavailable.
 
+## Standalone Use And Scope
+
+This skill does not require sibling skills. References to other skills below are optional: use them only if available and relevant. Otherwise follow the target repository's instructions, existing owners, and tests; ask when missing domain policy prevents a safe decision. Do not install a missing skill automatically.
+
+Match the user's request: review or planning does not authorize edits. Instructions here do not grant permission for unrelated installs, credential access, destructive actions, deployment, or publication.
+
 ## Establish Runtime Truth
 
 1. Run `git status --short --branch` and preserve unrelated work.
@@ -43,6 +49,8 @@ Keep one current session owner across lifecycle, location, background, and recov
 - Use `mobile-app-qa-proof` to keep deterministic lifecycle proof separate from simulator, hosted or provider, background, and physical-device evidence.
 
 ## Prove The Lifecycle Slice
+
+For moving fixes that starve a nearby query, read the [location-query example](references/location-query-example.md), with a dependency-free runnable model.
 
 1. Run focused deterministic lifecycle tests for start, pause, resume, end, duplicate entry, replacement, stale owner, orphan cleanup, restart recovery, degraded location, and partial failure.
 2. Run the repository's type check when typed app code changed, then `git diff --check` and inspect exact changed paths.

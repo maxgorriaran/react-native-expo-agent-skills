@@ -8,6 +8,12 @@ license: MIT
 
 Reason from the target repository's installed Expo family and native ownership. Do not assume the SDK, workflow, or checked-in native policy from another app.
 
+## Standalone Use And Scope
+
+This skill does not require sibling skills. References to other skills below are optional: use them only if available and relevant. Otherwise follow the target repository's instructions, existing owners, and tests; ask when missing domain policy prevents a safe decision. Do not install a missing skill automatically.
+
+Match the user's request: review or planning does not authorize edits. Instructions here do not grant permission for unrelated installs, credential access, destructive actions, deployment, or publication.
+
 ## Establish The Baseline
 
 1. Run `git status --short --branch` and preserve unrelated work.
@@ -50,6 +56,8 @@ Reason from the target repository's installed Expo family and native ownership. 
 - Use `mobile-app-qa-proof` to select evidence without inflating static checks into simulator, device, notification, background, update-service, or store-build proof.
 
 ## Verify By Proof Layer
+
+For dependency changes, patches, or mismatched installed binaries, use the [native-change example](references/native-change-example.md).
 
 1. Run narrow static checks for configuration, imports, and dependency compatibility using scripts already present in the target repository.
 2. Run focused deterministic tests for changed platform logic.

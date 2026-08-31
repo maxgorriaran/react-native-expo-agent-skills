@@ -8,6 +8,12 @@ license: MIT
 
 Carry one immutable operation identity from entry through every effect. An owner identity alone does not distinguish two operations started by the same owner.
 
+## Standalone Use And Scope
+
+This skill does not require sibling skills. References to other skills below are optional: use them only if available and relevant. Otherwise follow the target repository's instructions, existing owners, and tests; ask when missing domain policy prevents a safe decision. Do not install a missing skill automatically.
+
+Match the user's request: review or planning does not authorize edits. Instructions here do not grant permission for unrelated installs, credential access, destructive actions, deployment, or publication.
+
 ## Map The Effect Chain
 
 1. Run `git status --short --branch` and preserve unrelated work.
@@ -43,6 +49,8 @@ Carry one immutable operation identity from entry through every effect. An owner
 - Thread the missing identity through the smallest complete call chain and preserve current behavior for exact-current work.
 
 ## Prove Replacement Safety
+
+For stale results and retry starvation, read the [worked recovery example](references/recovery-example.md), with a dependency-free runnable model.
 
 1. Test A replaced during each meaningful await and assert zero stale effects.
 2. Test cancellation, unmount, owner replacement, retry, partial failure, restart recovery, and late A cleanup after B starts.

@@ -8,6 +8,12 @@ license: MIT
 
 Implement a bounded mobile surface with the target repository's existing React Native, state, navigation, theme, and component patterns.
 
+## Standalone Use And Scope
+
+This skill does not require sibling skills. References to other skills below are optional: use them only if available and relevant. Otherwise follow the target repository's instructions, existing owners, and tests; ask when missing domain policy prevents a safe decision. Do not install a missing skill automatically.
+
+Match the user's request: review or planning does not authorize edits. Instructions here do not grant permission for unrelated installs, credential access, destructive actions, deployment, or publication.
+
 ## Establish The Surface
 
 1. Run `git status --short --branch` and preserve unrelated work.
@@ -48,6 +54,8 @@ Implement a bounded mobile surface with the target repository's existing React N
 - Use `mobile-app-qa-proof` to separate static checks from simulator, accessibility, and physical-device evidence.
 
 ## Verify The Slice
+
+For doubled insets, keyboard overlap, or large-text layout, use the [inset-ownership example](references/inset-layout-example.md).
 
 1. Inspect available scripts and run the narrow deterministic tests for the changed owner; run the repository's type check when typed app code changed.
 2. Run `git diff --check` and inspect the exact changed paths.

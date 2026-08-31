@@ -1,10 +1,186 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "generatedAt": "deterministic-from-git-object",
   "sourceProject": "CoRoam mobile application engineering",
-  "sourceCommit": "2111a5e7986685576c8573f48797c343eb52e2b0",
+  "sourceCommit": "1619af074b194f8b6294a76b167f8655b08e549e",
   "sourceRoot": ".agents/skills",
   "exportDirection": "one-way",
-  "handMaintainedPublicMirror": false
+  "handMaintainedPublicMirror": false,
+  "adaptationBaselineCommit": "2111a5e7986685576c8573f48797c343eb52e2b0",
+  "exportConfigSha256": "74e5729b6f818622beee636efd6639ae5842b806826bd491635e2437f210ee35",
+  "exporterSha256": "97b263cbbf08335add264c6fb6e15eb415683fc30f6d8019481ba70a9b2dfdda",
+  "mappings": [
+    {
+      "name": "async-effect-authority",
+      "owner": "coroam-async-effect-authority",
+      "files": [
+        {
+          "source": ".agents/skills/coroam-async-effect-authority/references/public-export/LICENSE.txt",
+          "destination": "skills/async-effect-authority/LICENSE.txt",
+          "sha256": "3e69624aba2371144e18bd6eaceaaf8baa5a4523a18319a1122bb1d02259749b"
+        },
+        {
+          "source": ".agents/skills/coroam-async-effect-authority/references/public-export/instructions.md",
+          "destination": "skills/async-effect-authority/SKILL.md",
+          "sha256": "fe07c1673fbb2cd1075b64fe009f186530902a368efd1c00f699403d76f68042"
+        },
+        {
+          "source": ".agents/skills/coroam-async-effect-authority/references/public-export/agents/openai.yaml",
+          "destination": "skills/async-effect-authority/agents/openai.yaml",
+          "sha256": "17460429b741fd575c22679780ca208c91c6d4cacbf75ccec1275e3a8f3fddb6"
+        },
+        {
+          "source": ".agents/skills/coroam-async-effect-authority/references/public-export/references/recovery-example.md",
+          "destination": "skills/async-effect-authority/references/recovery-example.md",
+          "sha256": "bc6cb257638173736aa5e1c84543c768fe542fd772c385e056a250ac6e8b26e6"
+        },
+        {
+          "source": ".agents/skills/coroam-async-effect-authority/references/public-export/scripts/recovery-example.test.mjs",
+          "destination": "skills/async-effect-authority/scripts/recovery-example.test.mjs",
+          "sha256": "26b9669f42921e634b1ae1dd755b37d5e835962e946b1330739bcf8b76cd4faf"
+        }
+      ]
+    },
+    {
+      "name": "expo-platform-engineering",
+      "owner": "coroam-expo-platform-engineering",
+      "files": [
+        {
+          "source": ".agents/skills/coroam-expo-platform-engineering/references/public-export/LICENSE.txt",
+          "destination": "skills/expo-platform-engineering/LICENSE.txt",
+          "sha256": "3e69624aba2371144e18bd6eaceaaf8baa5a4523a18319a1122bb1d02259749b"
+        },
+        {
+          "source": ".agents/skills/coroam-expo-platform-engineering/references/public-export/instructions.md",
+          "destination": "skills/expo-platform-engineering/SKILL.md",
+          "sha256": "6567d6d32ab836e8f3e8f0df8f25bfa9200c3c72aa11b7f0b8b0c87c71e8b3f3"
+        },
+        {
+          "source": ".agents/skills/coroam-expo-platform-engineering/references/public-export/agents/openai.yaml",
+          "destination": "skills/expo-platform-engineering/agents/openai.yaml",
+          "sha256": "c99e3d9728ee8010aca499c56213ddf3a31baf379557bd5f6a1b19e0388fabbb"
+        },
+        {
+          "source": ".agents/skills/coroam-expo-platform-engineering/references/public-export/references/platform-provenance.md",
+          "destination": "skills/expo-platform-engineering/references/platform-provenance.md",
+          "sha256": "c2e648b04cbd2d9a74e129018ccff9c1d9c1922269d3cb795bbaca1b10568642"
+        },
+        {
+          "source": ".agents/skills/coroam-expo-platform-engineering/references/public-export/references/native-change-example.md",
+          "destination": "skills/expo-platform-engineering/references/native-change-example.md",
+          "sha256": "724638107024fca6f49c24d14dec021cbf6ae0e636393425628eeb0e1adbca4e"
+        }
+      ]
+    },
+    {
+      "name": "mobile-app-qa-proof",
+      "owner": "coroam-app-qa-proof",
+      "files": [
+        {
+          "source": ".agents/skills/coroam-app-qa-proof/references/public-export/LICENSE.txt",
+          "destination": "skills/mobile-app-qa-proof/LICENSE.txt",
+          "sha256": "3e69624aba2371144e18bd6eaceaaf8baa5a4523a18319a1122bb1d02259749b"
+        },
+        {
+          "source": ".agents/skills/coroam-app-qa-proof/references/public-export/instructions.md",
+          "destination": "skills/mobile-app-qa-proof/SKILL.md",
+          "sha256": "b5ba5818887e23db689ce2956dab4758735c09e937d381be77dba66217bd5405"
+        },
+        {
+          "source": ".agents/skills/coroam-app-qa-proof/references/public-export/agents/openai.yaml",
+          "destination": "skills/mobile-app-qa-proof/agents/openai.yaml",
+          "sha256": "45f752b355fc0aebcbd075e01d4333af9dabd1a945121f2496f57bb7e429e59d"
+        },
+        {
+          "source": ".agents/skills/coroam-app-qa-proof/references/public-export/references/risk-based-proof-examples.md",
+          "destination": "skills/mobile-app-qa-proof/references/risk-based-proof-examples.md",
+          "sha256": "f4aa840f7518f6697fa1650cc5ea94121599addbdec267f07da86d82d6d266c2"
+        }
+      ]
+    },
+    {
+      "name": "mobile-navigation-authority",
+      "owner": "coroam-navigation-route-authority",
+      "files": [
+        {
+          "source": ".agents/skills/coroam-navigation-route-authority/references/public-export/LICENSE.txt",
+          "destination": "skills/mobile-navigation-authority/LICENSE.txt",
+          "sha256": "3e69624aba2371144e18bd6eaceaaf8baa5a4523a18319a1122bb1d02259749b"
+        },
+        {
+          "source": ".agents/skills/coroam-navigation-route-authority/references/public-export/instructions.md",
+          "destination": "skills/mobile-navigation-authority/SKILL.md",
+          "sha256": "43d3c2582e5f229b37d8a58ef9a98a1084115c53b87e07e4111c3ce53d45ae34"
+        },
+        {
+          "source": ".agents/skills/coroam-navigation-route-authority/references/public-export/agents/openai.yaml",
+          "destination": "skills/mobile-navigation-authority/agents/openai.yaml",
+          "sha256": "c219f8ecb8fc740d6d7212731421ef7c22e5ce2590750020e8ca44cdb6f5330b"
+        },
+        {
+          "source": ".agents/skills/coroam-navigation-route-authority/references/public-export/references/intent-ownership-example.md",
+          "destination": "skills/mobile-navigation-authority/references/intent-ownership-example.md",
+          "sha256": "2d4045d8a66289da8bdbb69709f5c410bc8969c373d2c6a7e9a0ba914655cdaf"
+        }
+      ]
+    },
+    {
+      "name": "mobile-session-location-safety",
+      "owner": "coroam-session-location-safety",
+      "files": [
+        {
+          "source": ".agents/skills/coroam-session-location-safety/references/public-export/LICENSE.txt",
+          "destination": "skills/mobile-session-location-safety/LICENSE.txt",
+          "sha256": "3e69624aba2371144e18bd6eaceaaf8baa5a4523a18319a1122bb1d02259749b"
+        },
+        {
+          "source": ".agents/skills/coroam-session-location-safety/references/public-export/instructions.md",
+          "destination": "skills/mobile-session-location-safety/SKILL.md",
+          "sha256": "8cb5fad1bb5c25ae50c8d304e6af8768f33991847b4a2be08f971aa850666496"
+        },
+        {
+          "source": ".agents/skills/coroam-session-location-safety/references/public-export/agents/openai.yaml",
+          "destination": "skills/mobile-session-location-safety/agents/openai.yaml",
+          "sha256": "747e3bb58efb6ab5ef49185363a75128fbec50fda9571ab21de7d5fb99004e31"
+        },
+        {
+          "source": ".agents/skills/coroam-session-location-safety/references/public-export/references/location-query-example.md",
+          "destination": "skills/mobile-session-location-safety/references/location-query-example.md",
+          "sha256": "f611d0f0d95fdb0f6e7ecd6350a95853c57782dc56e198020d9790e5523d06b5"
+        },
+        {
+          "source": ".agents/skills/coroam-session-location-safety/references/public-export/scripts/query-example.test.mjs",
+          "destination": "skills/mobile-session-location-safety/scripts/query-example.test.mjs",
+          "sha256": "51515a80341eeb9a3d88028e0b8b0d93d2eca3c3eebced9b3c02bf8cb1309bcc"
+        }
+      ]
+    },
+    {
+      "name": "react-native-engineering",
+      "owner": "coroam-react-native-engineering",
+      "files": [
+        {
+          "source": ".agents/skills/coroam-react-native-engineering/references/public-export/LICENSE.txt",
+          "destination": "skills/react-native-engineering/LICENSE.txt",
+          "sha256": "3e69624aba2371144e18bd6eaceaaf8baa5a4523a18319a1122bb1d02259749b"
+        },
+        {
+          "source": ".agents/skills/coroam-react-native-engineering/references/public-export/instructions.md",
+          "destination": "skills/react-native-engineering/SKILL.md",
+          "sha256": "9931bb82d5d6764c3fa8a29ae29badba1572043912304d1af1a9918f03c97811"
+        },
+        {
+          "source": ".agents/skills/coroam-react-native-engineering/references/public-export/agents/openai.yaml",
+          "destination": "skills/react-native-engineering/agents/openai.yaml",
+          "sha256": "f5a1186d9685d7b558ea58313b318b44c42099bc40329c2137997b5574911ea7"
+        },
+        {
+          "source": ".agents/skills/coroam-react-native-engineering/references/public-export/references/inset-layout-example.md",
+          "destination": "skills/react-native-engineering/references/inset-layout-example.md",
+          "sha256": "719d271a4e8239ec25fb4856a6591d2ec5c12bec293e17139d7f39523f2d437b"
+        }
+      ]
+    }
+  ]
 }
