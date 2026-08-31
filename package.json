@@ -1,11 +1,11 @@
 {
   "name": "react-native-expo-agent-skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Agent Skills for reliable React Native and Expo engineering",
   "license": "MIT",
   "scripts": {
-    "test": "node scripts/verify.mjs"
+    "test": "node scripts/verify.mjs && node --test skills/async-effect-authority/scripts/recovery-example.test.mjs skills/mobile-session-location-safety/scripts/query-example.test.mjs"
   },
   "engines": {
     "node": ">=20"

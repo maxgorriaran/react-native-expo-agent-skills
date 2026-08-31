@@ -4,16 +4,20 @@ Thank you for helping improve these skills.
 
 ## Generated Repository
 
-The files under `skills/` are a deterministic one-way export from the canonical CoRoam engineering repository. Direct edits to exported skill files cannot be merged here because they would create a hand-maintained mirror.
+This entire repository is a deterministic one-way export from the canonical CoRoam engineering repository. That includes skills, documentation, verification tooling, catalog metadata, and checksums. Accepted changes must enter the canonical source before being exported here.
 
-For a correction or new rule:
+For a correction to instructions, documentation, or tooling:
 
 1. Open an issue describing the affected skill, target behavior, and evidence.
 2. Use public or sanitized examples only. Do not submit private application code, credentials, provider payloads, signing material, or user data.
 3. Distinguish structural validation, host startup discovery, instruction-following, simulator or device behavior, hosted behavior, and release proof.
-4. The maintainer will apply accepted changes to the canonical source, run its semantic tests, and publish a new deterministic export.
+4. The maintainer applies accepted changes to the canonical skill resources or repository templates, runs the applicable checks, and prepares a new deterministic export for publication approval.
 
-Pull requests may improve public-repository documentation or verification tooling when they do not modify generated skill bytes, catalog provenance, or checksums. Generated-file changes will be replaced by the next export.
+Issues are the preferred contribution path. Pull requests are welcome as proposed patches, but are not merged directly. A documentation-only patch will also fail checksum verification until it has been integrated upstream and re-exported. Do not hand-edit checksums to make a proposal pass.
+
+The maintainer links the proposal to the resulting public export commit or release and closes it when incorporated. This keeps accepted changes from being overwritten by a later export. Contributors do not need access to the private source repository.
+
+This upstream contribution workflow does not restrict the rights granted by the MIT license to use, modify, or fork the public package.
 
 ## Quality Bar
 

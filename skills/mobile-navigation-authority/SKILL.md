@@ -8,6 +8,12 @@ license: MIT
 
 Preserve one action, one owner, and one committed transition across app navigation and geographic navigation. Keep the two domains explicit.
 
+## Standalone Use And Scope
+
+This skill does not require sibling skills. References to other skills below are optional: use them only if available and relevant. Otherwise follow the target repository's instructions, existing owners, and tests; ask when missing domain policy prevents a safe decision. Do not install a missing skill automatically.
+
+Match the user's request: review or planning does not authorize edits. Instructions here do not grant permission for unrelated installs, credential access, destructive actions, deployment, or publication.
+
 ## Establish The Authorities
 
 1. Run `git status --short --branch` and preserve unrelated work.
@@ -46,6 +52,8 @@ Preserve one action, one owner, and one committed transition across app navigati
 - Use `mobile-app-qa-proof` to keep static transition tests separate from simulator, provider, GPS, background, and physical-device evidence.
 
 ## Verify Transitions
+
+For late camera recovery and inactive-tab chrome, read the [intent-ownership example](references/intent-ownership-example.md).
 
 1. Test each event once, a rapid duplicate, A-late-after-B, back or gesture dismissal, terminal reset, and restart or background recovery at the production seam.
 2. For geographic routes, test missing or malformed geometry, stale response, no-route, off-route reroute, camera contention, and external-app failure.
