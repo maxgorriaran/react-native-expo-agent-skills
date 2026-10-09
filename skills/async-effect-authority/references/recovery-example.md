@@ -21,7 +21,7 @@ cancellation policy. Backoff alone does not establish eventual success.
 
 ## Runnable model
 
-With Node.js 20+ available, run from this skill directory:
+With Node.js 22+ available (a supported LTS release is recommended), run from this skill directory:
 
 ```sh
 node --test scripts/recovery-example.test.mjs

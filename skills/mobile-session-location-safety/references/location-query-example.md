@@ -27,7 +27,7 @@ hide a materially changed destination, privacy boundary, or stale fix.
 
 ## Runnable model
 
-With Node.js 20+ available, run from this skill directory:
+With Node.js 22+ available (a supported LTS release is recommended), run from this skill directory:
 
 ```sh
 node --test scripts/query-example.test.mjs

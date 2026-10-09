@@ -1,4 +1,4 @@
-// Synthetic model, not a React hook or production retry utility. Node.js 20+, no dependencies.
+// Synthetic model, not a React hook or production retry utility. Node.js 22+, no dependencies.
 import assert from 'node:assert/strict';
 import test from 'node:test';
 

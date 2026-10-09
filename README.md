@@ -17,33 +17,33 @@ These skills encode production lessons from building CoRoam, then generalize the
 
 ## Install
 
-Use a GitHub CLI version that provides `gh skill install` (check `gh skill install --help`). The [official CLI documentation](https://cli.github.com/manual/gh_skill_install) describes supported targets and installation flags. Pin installs to a published release tag; the examples below apply once `v0.2.0` is published.
+Use a GitHub CLI version that provides `gh skill install` (check `gh skill install --help`). The [official CLI documentation](https://cli.github.com/manual/gh_skill_install) describes supported targets and installation flags. Pin installs to a tag listed on the [releases page](https://github.com/maxgorriaran/react-native-expo-agent-skills/releases). The commands below target this snapshot's `v0.2.1`; use the latest published tag if reviewing an unreleased candidate.
 
 Install one skill into the current project for Codex:
 
 ```bash
-gh skill install maxgorriaran/react-native-expo-agent-skills expo-platform-engineering@v0.2.0 --agent codex --scope project
+gh skill install maxgorriaran/react-native-expo-agent-skills expo-platform-engineering@v0.2.1 --agent codex --scope project
 ```
 
 Replace the skill name with any entry in the table. These commands select the CLI's Cursor and GitHub Copilot installation targets; they are not evidence that those clients have been tested with this package:
 
 ```bash
-gh skill install maxgorriaran/react-native-expo-agent-skills react-native-engineering@v0.2.0 --agent cursor --scope project
-gh skill install maxgorriaran/react-native-expo-agent-skills mobile-app-qa-proof@v0.2.0 --agent github-copilot --scope project
+gh skill install maxgorriaran/react-native-expo-agent-skills react-native-engineering@v0.2.1 --agent cursor --scope project
+gh skill install maxgorriaran/react-native-expo-agent-skills mobile-app-qa-proof@v0.2.1 --agent github-copilot --scope project
 ```
 
 Install all six for Codex:
 
 ```bash
 for skill in expo-platform-engineering react-native-engineering async-effect-authority mobile-navigation-authority mobile-session-location-safety mobile-app-qa-proof; do
-  gh skill install maxgorriaran/react-native-expo-agent-skills "$skill@v0.2.0" --agent codex --scope project
+  gh skill install maxgorriaran/react-native-expo-agent-skills "$skill@v0.2.1" --agent codex --scope project
 done
 ```
 
 Preview before installing:
 
 ```bash
-gh skill preview maxgorriaran/react-native-expo-agent-skills expo-platform-engineering@v0.2.0
+gh skill preview maxgorriaran/react-native-expo-agent-skills expo-platform-engineering@v0.2.1
 ```
 
 ## Suggested Package Use
@@ -65,9 +65,9 @@ Installing all six makes the optional handoffs available. Each task should still
 
 Public CI runs `npm test`: the structural verifier followed by the two executable example suites. The verifier checks the six-skill catalog, frontmatter, local Markdown inline links, license consistency, targeted safety patterns, provenance metadata, and checksum inventory. The canonical source tests deterministic export and input containment separately. External links are not fetched by this check.
 
-These automated checks do not establish client or app behavior. Separate [candidate-bound client checks](CLIENT_TESTS.md) cover local installation for all three targets and fresh-session discovery plus six prompt-assisted review scenarios in Codex and Cursor. Copilot model access was blocked by account policy. Complete workflow compliance, fully isolated profiles, editor integration, app runtime, and release compatibility remain unproved; see the report's exact versions, observed omissions, and exclusions.
+These automated checks do not establish client or app behavior. The [client and publication report](CLIENT_TESTS.md) separates results for this skill payload from historical v0.2.0 client tests and completed v0.2.0 release checks. Read its exact client versions, observed omissions, and exclusions before making compatibility claims.
 
-For a standalone structural check of an unmodified exported skill directory, use `node scripts/verify.mjs --skill /path/to/skill-directory` from a downloaded copy of this repository (Node.js 20+). This validates our exported frontmatter subset, not arbitrary client-added installation metadata or every optional Agent Skills field. It does not install the skill or start an agent. The verifier uses targeted patterns, not an exhaustive secret scan or security certification; checksums detect byte changes, not trusted authorship or correct behavior.
+For a standalone structural check of an unmodified exported skill directory, use `node scripts/verify.mjs --skill /path/to/skill-directory` from a downloaded copy of this repository (Node.js 22+; supported LTS 22 or 24 recommended). This validates our exported frontmatter subset, not arbitrary client-added installation metadata or every optional Agent Skills field. It does not install the skill or start an agent. The verifier uses targeted patterns, not an exhaustive secret scan or security certification; checksums detect byte changes, not trusted authorship or correct behavior.
 
 See [catalog/skills.json](catalog/skills.json) for machine-readable metadata, [provenance/source.json](provenance/source.json) for the immutable source commit, and [checksums/SHA256SUMS](checksums/SHA256SUMS) for file integrity.
 
@@ -75,7 +75,7 @@ See [catalog/skills.json](catalog/skills.json) for machine-readable metadata, [p
 
 Each skill links to a short optional reference: native dependency and rebuild decisions, inset ownership, async recovery, navigation intent, location queries, or risk-based QA reports. Read only the example relevant to the task.
 
-Two references include dependency-free JavaScript models. With Node.js 20+ available, run from this repository:
+Two references include dependency-free JavaScript models. With Node.js 22+ available, run from this repository:
 
 ```sh
 node --test skills/async-effect-authority/scripts/recovery-example.test.mjs
