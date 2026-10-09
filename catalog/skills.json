@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "name": "react-native-expo-agent-skills",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "repository": "https://github.com/maxgorriaran/react-native-expo-agent-skills",
-  "sourceCommit": "1619af074b194f8b6294a76b167f8655b08e549e",
+  "sourceCommit": "47c44e5cb8f7cd49f24279f39eea1b92168f5b00",
   "skills": [
     {
       "name": "async-effect-authority",

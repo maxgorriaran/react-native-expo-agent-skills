@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "generatedAt": "deterministic-from-git-object",
   "sourceProject": "CoRoam mobile application engineering",
-  "sourceCommit": "1619af074b194f8b6294a76b167f8655b08e549e",
+  "sourceCommit": "47c44e5cb8f7cd49f24279f39eea1b92168f5b00",
   "sourceRoot": ".agents/skills",
   "exportDirection": "one-way",
   "handMaintainedPublicMirror": false,
   "adaptationBaselineCommit": "2111a5e7986685576c8573f48797c343eb52e2b0",
-  "exportConfigSha256": "74e5729b6f818622beee636efd6639ae5842b806826bd491635e2437f210ee35",
+  "exportConfigSha256": "2dd0c8a767d60fc034b7f702bf7657567bbca430d74bbf5873fe9300e1f46c20",
   "exporterSha256": "97b263cbbf08335add264c6fb6e15eb415683fc30f6d8019481ba70a9b2dfdda",
   "mappings": [
     {
@@ -33,12 +33,12 @@
         {
           "source": ".agents/skills/coroam-async-effect-authority/references/public-export/references/recovery-example.md",
           "destination": "skills/async-effect-authority/references/recovery-example.md",
-          "sha256": "bc6cb257638173736aa5e1c84543c768fe542fd772c385e056a250ac6e8b26e6"
+          "sha256": "8a51d5a65e1ce63de61848e9386a69bba4f29f8e2b5b0e0e17a29b6be5847bc2"
         },
         {
           "source": ".agents/skills/coroam-async-effect-authority/references/public-export/scripts/recovery-example.test.mjs",
           "destination": "skills/async-effect-authority/scripts/recovery-example.test.mjs",
-          "sha256": "26b9669f42921e634b1ae1dd755b37d5e835962e946b1330739bcf8b76cd4faf"
+          "sha256": "53a786756550d2c8545caeee19f40a6324f193842f0d87d2f6375e3649bb7c1b"
         }
       ]
     },
@@ -54,7 +54,7 @@
         {
           "source": ".agents/skills/coroam-expo-platform-engineering/references/public-export/instructions.md",
           "destination": "skills/expo-platform-engineering/SKILL.md",
-          "sha256": "6567d6d32ab836e8f3e8f0df8f25bfa9200c3c72aa11b7f0b8b0c87c71e8b3f3"
+          "sha256": "0fbff181f93163b914849072b6505488ad804cd8be1559f70fce4bd18c4d32b7"
         },
         {
           "source": ".agents/skills/coroam-expo-platform-engineering/references/public-export/agents/openai.yaml",
@@ -64,7 +64,7 @@
         {
           "source": ".agents/skills/coroam-expo-platform-engineering/references/public-export/references/platform-provenance.md",
           "destination": "skills/expo-platform-engineering/references/platform-provenance.md",
-          "sha256": "c2e648b04cbd2d9a74e129018ccff9c1d9c1922269d3cb795bbaca1b10568642"
+          "sha256": "11c31631b09908fd8ca5d51a0cde587c5adf4cbdb8fb13db55bd047b4a21958b"
         },
         {
           "source": ".agents/skills/coroam-expo-platform-engineering/references/public-export/references/native-change-example.md",
@@ -147,7 +147,7 @@
         {
           "source": ".agents/skills/coroam-session-location-safety/references/public-export/references/location-query-example.md",
           "destination": "skills/mobile-session-location-safety/references/location-query-example.md",
-          "sha256": "f611d0f0d95fdb0f6e7ecd6350a95853c57782dc56e198020d9790e5523d06b5"
+          "sha256": "f879ef374e7cc34bd5ab684a1abedf7ee889236fb46348778bb7dd055d69dc7b"
         },
         {
           "source": ".agents/skills/coroam-session-location-safety/references/public-export/scripts/query-example.test.mjs",

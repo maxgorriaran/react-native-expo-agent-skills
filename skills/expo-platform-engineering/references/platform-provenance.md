@@ -2,6 +2,14 @@
 
 Use current official Expo documentation to refresh platform claims before changing guidance. The target repository's installed versions and ownership rules remain authoritative for that project.
 
+## Architecture support checked on 2026-10-08
+
+The [official New Architecture guide](https://docs.expo.dev/guides/new-architecture/) states that
+SDK 55 and later require New Architecture, while SDK 54 is the last SDK that permits disabling it.
+On SDK 55+, `newArchEnabled: false` does not restore legacy support. Check the installed SDK before
+preserving an architecture setting or proposing an upgrade. This support boundary does not authorize
+an SDK migration, dependency install, native regeneration, or build.
+
 ## Inspect The Target Repository
 
 - `package.json`: installed Expo, React Native, React, navigation, animation, development-client, TaskManager, notification, location, and update versions.

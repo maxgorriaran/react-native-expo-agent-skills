@@ -42,7 +42,7 @@ Match the user's request: review or planning does not authorize edits. Instructi
 ## Preserve Compatibility
 
 - Keep iOS permission strings and entitlements coherent with Android permissions and manifest entries without assuming platform symmetry.
-- Preserve the repository's current New Architecture decision unless the task explicitly authorizes a migration.
+- Preserve the repository's current architecture where its installed SDK supports that choice. Expo SDK 55 and later require New Architecture; SDK 54 and earlier can use legacy architecture. An SDK upgrade that removes legacy support needs an explicit migration decision, compatible dependencies, and a rebuilt binary. Do not promise that `newArchEnabled: false` preserves legacy behavior on SDK 55+ or silently upgrade the app.
 - Keep animation worklets, Babel transforms, and native module versions in a compatible family. Native module changes require a rebuilt binary.
 - Review Android edge-to-edge and back behavior separately from iOS lifecycle and native-target behavior.
 - Keep update channels and runtime compatibility distinct: a channel chooses an update stream, while the runtime version decides whether an installed binary may load an update.
